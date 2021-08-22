@@ -6,6 +6,8 @@ const deliveryInput = document.getElementById('delivery-cost');
 // balance update 
 const totalPrice = document.getElementById('total-price');
 const bestPriceInput = document.getElementById('best-price');
+const grandTotalPrice = document.getElementById('grand-total');
+
 
 
 // Memory Cost and balance
@@ -49,7 +51,7 @@ function updateTotal(){
     const deliveryCost = Number(deliveryInput.innerText);
     
 
-    const total= memorycost + storageCost + deliveryCost + bestPrice;
+    let total= memorycost + storageCost + deliveryCost + bestPrice;
 
     totalPrice.innerText = total;
     // promo code
